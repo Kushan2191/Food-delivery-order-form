@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Menu</title>
+</head>
+<body>
+    <header>
+        <h1>My Nepfood Delivery </h1>
+    </header>
+
+    <section>
+        <table border="1" cellpadding="10">
+            <caption>Today's Specials</caption>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Momo</td>
+                    <td>Steamed dumplings filled with minced meat or vegetables</td>
+                    <td>Rs. 150</td>
+                </tr>
+                <tr>
+                    <td>Dal Bhat</td>
+                    <td>A traditional meal consisting of lentil soup and rice</td>
+                    <td>Rs. 250</td>
+                </tr>
+                <tr>
+                    <td>Gundruk Ko Jhol</td>
+                    <td>A fermented leafy green soup, typically served hot</td>
+                    <td>Rs.200</td>
+                </tr>
+                <tr>
+                    <td>Thukpa</td>
+                    <td>Noodle soup with vegetables and meat, popular in mountainous regions</td>
+                    <td>Rs.300</td>
+                </tr>
+                <tr>
+                    <td>Sel Roti</td>
+                    <td>A sweet, deep-fried rice doughnut, often enjoyed during festivals</td>
+                    <td>Rs. 500</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Order Here Please</h2>
+        <form id="orderForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+            <p>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+            </p>
+            <p>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone">
+            </p>
+
+            <fieldset>
+                <legend>Select Your Dishes:</legend>
+                <label><input type="checkbox" name="dish" value="Momo"> Momo - Rs. 150</label><br>
+                <label><input type="checkbox" name="dish" value="Dal Bhat"> Dal Bhat - Rs. 250</label><br>
+                <label><input type="checkbox" name="dish" value="Gundruk Ko Jhol"> Gundruk Ko Jhol - Rs.200</label><br>
+                <label><input type="checkbox" name="dish" value="Thukpa"> Thukpa - Rs.300</label><br>
+                <label><input type="checkbox" name="dish" value="Sel Roti"> Sel Roti - Rs.500</label><br>
+            </fieldset>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" required></textarea>
+            <p>
+
+            <button type="submit">Place Order</button>
+            </p>
+        </form>
+        <div id="orderSummary"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
